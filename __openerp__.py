@@ -4,7 +4,7 @@
 
 {
     'name': 'Restrict adding nonexistent products to the shopping cart',
-    'version': '9.0.0.1.0',
+    'version': '9.0.1.0.0',
     'category': 'Sales',
     'author': 'Humanytek',
     'website': "http://www.humanytek.com",
