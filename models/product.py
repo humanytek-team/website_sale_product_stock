@@ -17,17 +17,17 @@ class ProductProduct(models.Model):
         self.ensure_one()
 
         if self.type == 'product':
-            if product_qty > (self.qty_available -
-                              self.outgoing_qty):
+            if product_qty > (self.sudo().qty_available -
+                              self.sudo().outgoing_qty):
 
-                qty_available = self.qty_available - self.outgoing_qty
+                qty_available = self.sudo().qty_available - self.sudo().outgoing_qty
 
                 message = _('You plan to buy %.2f %s but the stock on hand is %.2f %s.') % \
                     (
                         product_qty,
-                        self.uom_id.name,
+                        self.sudo().uom_id.name,
                         qty_available,
-                        self.uom_id.name
+                        self.sudo().uom_id.name
                     )
                 return message
 
