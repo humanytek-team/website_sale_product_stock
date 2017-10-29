@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <template id="product_not_available" name="Product not available">
+      <t t-call="website.layout">
+          <div id="wrap">
+            <div class="container oe_website_sale">
+              <h1 class="mb32"><t t-esc="title" /></h1>
+              <div class="row">
+                  <div class="col-md-8 col-sm-9">
+
+                      <div class="clearfix"/>
+
+                      <p><t t-esc="message" /></p>
+
+                      <a href="/shop" class="btn btn-default mb32">
+                        <span class="fa fa-long-arrow-left"/>
+                        <span class="hidden-xs">
+                          Continue Shopping
+                        </span>
+                        <span class="visible-xs-inline">Continue</span>
+                      </a>
+
+                      <div class="oe_structure"/>
+                  </div>
+                  <div class="col-lg-3 col-lg-offset-1 col-sm-3 col-md-3 text-muted" id="right_column">
+                      <h4>Policies</h4>
+                      <ul class="list-unstyled mb32">
+                          <li>&#9745; 30-days money-back guarantee</li>
+                          <li>&#9745; Invoice sent by e-Mail</li>
+                      </ul>
+                      <h4>Secure Payment</h4>
+                      <ul class="list-unstyled mb32">
+                          <li>&#9745; 256 bit encryption</li>
+                          <li>&#9745; Processed by Ogone</li>
+                      </ul>
+                  </div>
+              </div>
+
+            </div>
+            <div class="oe_structure"/>
+          </div>
+      </t>
+    </template>
+
+  </data>
+</openerp>
