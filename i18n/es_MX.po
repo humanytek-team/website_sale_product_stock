@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 9.0e-20170815\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-29 17:15+0000\n"
-"PO-Revision-Date: 2017-10-29 13:18-0400\n"
+"POT-Creation-Date: 2017-11-17 21:10+0000\n"
+"PO-Revision-Date: 2017-11-17 17:12-0400\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -33,6 +33,12 @@ msgstr ""
 "                        <span class=\"visible-xs-inline\">Continuar</span>"
 
 #. module: website_sale_product_stock
+#: code:addons/website_sale_product_stock/models/product.py:25
+#, python-format
+msgid "No availability for this product"
+msgstr "No hay disponibilidad para este producto."
+
+#. module: website_sale_product_stock
 #: model:ir.ui.view,arch_db:website_sale_product_stock.product_not_available
 msgid "Policies"
 msgstr "Políticas"
@@ -52,12 +58,6 @@ msgstr "Producto no disponible"
 #: model:ir.ui.view,arch_db:website_sale_product_stock.product_not_available
 msgid "Secure Payment"
 msgstr "Pago seguro"
-
-#. module: website_sale_product_stock
-#: code:addons/website_sale_product_stock/models/product.py:25
-#, python-format
-msgid "You plan to buy %.2f %s but the stock on hand is %.2f %s."
-msgstr "Desea comprar %.2f %s pero la cantidad disponible es %.2f %s."
 
 #. module: website_sale_product_stock
 #: model:ir.ui.view,arch_db:website_sale_product_stock.product_not_available
