@@ -22,13 +22,7 @@ class ProductProduct(models.Model):
 
                 qty_available = self.sudo().qty_available - self.sudo().outgoing_qty
 
-                message = _('You plan to buy %.2f %s but the stock on hand is %.2f %s.') % \
-                    (
-                        product_qty,
-                        self.sudo().uom_id.name,
-                        qty_available,
-                        self.sudo().uom_id.name
-                    )
+                message = _('No availability for this product')
                 return message
 
         return False
